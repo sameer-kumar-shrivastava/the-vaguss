@@ -1,0 +1,49 @@
+*{
+    margin:0px;
+    padding: 0;
+    
+}
+
+.navbar-container{
+    width: 100%;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+	top: 0px;
+    overflow: hidden;
+    z-index: 999;    
+    background: var(--backgroundcol);
+}
+.navbar-container h1{
+    color: var(--textcol);
+    padding-left: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    color: var(--textcol);
+
+}
+nav ul li button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: orange;
+    outline: none;
+    outline-offset: none;
+    border: none;
+    color: var(--textcol);
+}
+li:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: var(--textcol);
+}
+

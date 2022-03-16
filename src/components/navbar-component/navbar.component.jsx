@@ -6,13 +6,13 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const Navbar = () => {
     return(
             <div className='navbar-container'>
-                <h1><NavLink to="/">Company</NavLink></h1>
+                <h1><NavLink className='navbar-logo' to="/">Company</NavLink></h1>
                     <nav>                        
                         <ul>
                             <li>
                                 <Link
                                     activeClass="active"
-                                    to="section4"
+                                    to="imageslider"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
@@ -24,7 +24,7 @@ const Navbar = () => {
                             <li>
                             <Link
                                     activeClass="active"
-                                    to="text"
+                                    to="blog"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
@@ -33,10 +33,43 @@ const Navbar = () => {
                                     Blog
                                 </Link>
                             </li>
-                            <li>Explore</li>
-                            <li>About Us</li>
-                            <li>Contact</li>
-                            <li><button><NavLink to="/signin">Login | Signup</NavLink></button></li>
+                            <li>
+                            <Link
+                                    activeClass="active"
+                                    to="explore"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    Explore
+                                </Link>
+                            </li>
+                            <li>
+                            <Link
+                                    activeClass="active"
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                            <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    Contact
+                                </Link>
+                            </li>
+                            <li><button><NavLink className='navbar-login-button-text' to="/signin">Login | Signup</NavLink></button></li>
                             <li className='hamburger-menu-icon'>☰</li>
                         </ul>
                     </nav>

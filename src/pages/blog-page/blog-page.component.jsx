@@ -1,10 +1,9 @@
 import React from "react";
 import './blog-page.styles.scss';
 
+const BlogPage = () =>
+{
+    return (<div className="blog-page-container" id="blog">Hello Blog</div>)
+}
 
-const BlogPage =() => {
-    return(
-        <div className='blog-container' id="blog"> BLOGGGG</div>
-    );
-    }
-    export default BlogPage;
+export default BlogPage

@@ -1,4 +1,9 @@
-img{
+.imageslider{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+.home-image-1{
     height:90vh;
     width: 100%;
     object-fit: cover;

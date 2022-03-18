@@ -1,9 +1,9 @@
 import React from 'react';
 import './navbar.styles.scss';
 import { NavLink } from 'react-router-dom';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({LoggedIn}) => {
     return(
             <div className='navbar-container'>
                 <h1><NavLink className='navbar-logo' to="/">Company</NavLink></h1>
@@ -69,8 +69,16 @@ const Navbar = () => {
                                     Contact
                                 </Link>
                             </li>
-                            <li><button><NavLink className='navbar-login-button-text' to="/signin">Login | Signup</NavLink></button></li>
-                            <li className='hamburger-menu-icon'>☰</li>
+                            {/* {
+                                if(loggedIn = false)
+                                {
+                                    <li> <button><NavLink className='navbar-login-button-text' to="/signin">
+                                    Login | Signup                                
+                                    </NavLink></button></li>
+                                }    
+                            
+                            }                            */}
+                                <li className='hamburger-menu-icon'>☰</li>
                         </ul>
                     </nav>
             </div>

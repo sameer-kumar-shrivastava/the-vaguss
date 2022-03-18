@@ -1,24 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import Navbar from './components/navbar-component/navbar.component';
 import App from './App';
-import SigninPage from './pages/signin-page/signin-page';
-
-
-
 
 ReactDOM.render(
-  <Router>
-      <Navbar/>
-      <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/signin" element={<SigninPage />} />
-      </Routes>
-    </Router>
-
+    <App/>
   ,
   document.getElementById('root')
 );

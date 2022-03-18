@@ -3,7 +3,7 @@ import './blog-page.styles.scss';
 
 const BlogPage = () =>
 {
-    return (<div className="blog-page-container" id="blog">Hello Blog</div>)
+    return (<div className="blog-page-container" id="blog"> Bloggggggg</div>)
 }
 
 export default BlogPage

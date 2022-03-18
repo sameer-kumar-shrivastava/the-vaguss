@@ -22,7 +22,7 @@ const Navbar = ({LoggedIn}) => {
                                 </Link>
                             </li>
                             <li>
-                            <Link
+                                <Link
                                     activeClass="active"
                                     to="blog"
                                     spy={true}
@@ -34,7 +34,7 @@ const Navbar = ({LoggedIn}) => {
                                 </Link>
                             </li>
                             <li>
-                            <Link
+                                <Link
                                     activeClass="active"
                                     to="explore"
                                     spy={true}
@@ -46,7 +46,7 @@ const Navbar = ({LoggedIn}) => {
                                 </Link>
                             </li>
                             <li>
-                            <Link
+                                <Link
                                     activeClass="active"
                                     to="about"
                                     spy={true}
@@ -58,7 +58,7 @@ const Navbar = ({LoggedIn}) => {
                                 </Link>
                             </li>
                             <li>
-                            <Link
+                                <Link
                                     activeClass="active"
                                     to="contact"
                                     spy={true}

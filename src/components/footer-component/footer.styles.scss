@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding: 0;
+    
+}
+
+.footer-container{
+    width: 100%;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999;    
+    background: var(--backgroundcol);
+}
+.footer-container h1{
+    color: var(--textcol);
+    
+    // padding-left: 20px;
+}

@@ -1,10 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './signup-form.styles.scss';
 
 function SignupForm() {
 
     return(<div className='signup-form-component'>
      <h1 className='sigup-form-title'>Sign Up</h1>
+     <h4 className='signup-form-subtitle'> Already Have An Account? <NavLink className='signup-signin-button-text' to="/signin">Sign In</NavLink></h4>
      
 
      <form>

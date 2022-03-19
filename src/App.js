@@ -14,10 +14,12 @@ import SignupPage from './pages/signup-page/signup-page';
 class App extends Component {
 
 
-  render(){
+
+  render(props){
    
   return (
       <div className="App">
+        <h1>props.loggedIn</h1>
         <Router>
           <Navbar/>
             <Routes>

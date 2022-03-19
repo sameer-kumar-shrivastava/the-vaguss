@@ -45,7 +45,11 @@
     height: 40vh;
     width: 20vw;
     z-index: 3;
+    transition: all 1s;
     box-shadow: 5px 2px 5px 2px black;
+}
+.blog-img-div-one:hover{
+    transform: scale(1.1);
 }
 .blog-img-div-two{
     background-color: black;
@@ -53,7 +57,11 @@
     width: 20vw;
     z-index: 2;
     margin-left: -10vw;
+    transition: all 1s;
     box-shadow: 5px 2px 5px 2px black;
+}
+.blog-img-div-two:hover{
+    transform: scale(1.1);
 }
 .blog-img-div-three{
     background-color: black;
@@ -62,7 +70,11 @@
     z-index: 1;
     margin-left: -10vw;
     margin-right: 5vw;
+    transition: all 1s;
     box-shadow: 5px 2px 5px 2px #808080;
+}
+.blog-img-div-three:hover{
+    transform: scale(1.1);
 }
 .blog-img-one{
     height: 40vh;

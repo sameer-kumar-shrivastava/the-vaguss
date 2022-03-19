@@ -1,9 +1,120 @@
 .explore-container{
     height: 100vh;
-    background-color: cyan;
+    background-color: var(--backgroundcol);
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    line-height: 100vh;
     vertical-align: middle;
     font-size: 30px;
     font-weight: bold;
+}
+.explore-top-text{
+    height: 10vh;
+    margin-top: 10vh;
+    color: var(--textcol);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.explore-card{
+    height: 60vh;
+    width: 100%;
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+.explore-card-over-text{
+    color: var(--textcol);
+    margin-top: -15vh;
+    height: 14vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+.explore-card-picnic{
+    height: 40vh;
+    width: 20vw;
+    background-color: black;
+    margin-left: 4vw;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.explore-card-picnic:hover{
+    transform: scale(1.1);
+}
+.explore-picnic-img{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.explore-card-road{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 4vw;
+    transition: all 1s;
+}
+.explore-card-road:hover{
+    transform: scale(1.1);
+}
+.explore-road-img{
+    height: 40vh;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.4;
+}
+.explore-card-spots{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 4vw;
+    transition: all 1s;
+}
+.explore-card-spots:hover{
+    transform: scale(1.1);
+}
+.explore-spots-img{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.explore-card-places{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 4vw;
+    transition: all 1s;
+}
+.explore-card-places:hover{
+    transform: scale(1.1);
+}
+.explore-places-img{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.explore-footer-text{
+    text-align: right;
+    margin-right: 10vw;
+}
+.explore-footer-text-nav{
+    color: var(--textcol);
+    font-weight: 400;
 }

@@ -10,6 +10,7 @@ import ContactPage from '../contact-page/contact-page.component';
 const Dashboard = () => {
     return(<div className='dashboard-page-container'> 
       <span><ImageSlider id='imageslider'/></span>
+      
       {/* <div className="blog-page-container" id="blog">Hello Blog</div>       */}
       <span><BlogPage id="blog"/></span>
       <span><ExplorePage id='explore'/></span>

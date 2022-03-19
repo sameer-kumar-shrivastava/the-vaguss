@@ -1,9 +1,113 @@
 .about-container{
     height: 100vh;
-    background-color: red;
     text-align: center;
-    line-height: 100vh;
     vertical-align: middle;
     font-size: 30px;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+.about-page-div-one{
+    width: 50%;
+    height: 100vh;
+    color: var(--textcol);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.about-page-div-two{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundcol);
+}
+.about-page-title{
+    margin-top: 2vh;
+    color: black;
+    margin-bottom: 2vh;
+}
+.about-page-content{
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 300;
+}
+.read-or-hide{
+	color: blue;
+	cursor: pointer;
+	font-family: cursive;
+	font-size: 0.8rem;
+}
+.about-founder-container1{
+    height: 30vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+.about-founder-1{
+    height: 30vh;
+    width: 25vw;
+}
+.about-founder-img1{
+    height: 30vh;
+    width: 25vw;
+    object-fit: cover;
+}
+.about-founder-text1{
+    height: 30vh;
+    width: 25vw;
+    color: var(--textcol);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.about-founder-container2{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+.about-founder-text2{
+    height: 30vh;
+    width: 25vw;
+    color: var(--textcol);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.about-founder-2{
+    height: 30vh;
+    width: 25vw;
+}
+.about-founder-img2{
+    height: 30vh;
+    width: 25vw;
+    object-fit: cover;
+}
+.about-founder-container3{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+.about-founder-3{
+    height: 30vh;
+    width: 25vw;
+}
+.about-founder-img3{
+    height: 30vh;
+    width: 25vw;
+    object-fit: cover;
+}
+.about-founder-text3{
+    height: 30vh;
+    width: 25vw;
+    color: var(--textcol);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }

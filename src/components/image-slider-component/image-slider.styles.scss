@@ -38,3 +38,36 @@
 //     }
     
 // }
+.home-page-text{
+    z-index: 10;
+    height: 90vh;
+    width: 50%;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    align-items: left;
+    text-align: left;
+    justify-content: center;
+    color: var(--textcol);
+    
+}
+.home-start-button{
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.home-text-title{
+    padding-bottom: 20px;
+    font-size: 4rem;
+}
+.home-text-subtitle-1{
+    padding-bottom: 20px;
+    font-size: 4rem;
+}
+.home-text-subtitle-2{
+    font-size: 2rem;
+}

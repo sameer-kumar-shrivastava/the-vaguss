@@ -18,7 +18,7 @@ const ContactPage =() => {
                         <label className='contact-checkbox-label'><input className='contact-checkbox-input' type="checkbox"/>Subscribe for mailbox</label>
                     </div>
                     <div className="contact-box-right-container">
-                        <div className='contact-right-problem'><input className='contact-problem-input' type='text' placeholder='Describe your problem' /></div>
+                        <input className='contact-problem-input' type='text' placeholder='Describe your problem' />
                     </div>
                 </div>
                 <button className="contact-submit-button">Submit</button>

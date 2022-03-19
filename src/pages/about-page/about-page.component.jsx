@@ -26,7 +26,7 @@ const AboutPage =() => {
             </div>
             <div className="about-page-div-two">
                 <div className="about-founder-container1">
-                    <div className="about-founder-1"><img className="about-founder-img1" src='https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80' /></div>
+                    <div className="about-founder-1"><img className="about-founder-img1" src='https://media.istockphoto.com/photos/internet-meme-what-have-you-done-rage-face-3d-illustration-picture-id654591758?b=1&k=20&m=654591758&s=170667a&w=0&h=tzFwRAmZPko_8RKYgYR5ZZAIFeBk85wMTGojcutqFbY=' /></div>
                     <div className="about-founder-text1">
                         <h4 className="about-founder-text1-title">Name</h4>
                         <h5 className="about-founder-text1-subtitle">Founder</h5>
@@ -37,10 +37,10 @@ const AboutPage =() => {
                         <h4 className="about-founder-text2-title">Name</h4>
                         <h5 className="about-founder-text2-subtitle">Founder</h5>
                     </div>
-                    <div className="about-founder-2"><img className="about-founder-img2" src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80' /></div>
+                    <div className="about-founder-2"><img className="about-founder-img2" src='https://www.kindpng.com/picc/m/49-494201_mike-wazowski-hd-png-download-png-download-shrek.png' /></div>
                 </div>
                 <div className="about-founder-container3">
-                    <div className="about-founder-3"><img className="about-founder-img3" src='https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80' /></div>
+                    <div className="about-founder-3"><img className="about-founder-img3" src='https://res.cloudinary.com/dzdgpwtox/image/upload/w_450,c_scale/v1620749694/final_designs/seller_design_198202/f_20210511161453.png' /></div>
                     <div className="about-founder-text3">
                         <h4 className="about-founder-text3-title">Name</h4>
                         <h5 className="about-founder-text3-subtitle">Founder</h5>

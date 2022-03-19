@@ -30,7 +30,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: var(--backgroundlight);
+    background-color: #F5F5F5;
 }
 .contact-box-left-container{
     height: 60vh;
@@ -81,17 +81,13 @@
     height: 60vh;
     width: 50%;
 }
-.contact-right-problem{
-    min-height: 30vh;
-    width: 25vw;
-    border-radius: 0px;
-}
 .contact-problem-input{
     min-height: 30vh;
     width: 25vw;
     margin: 15vh;
     border-radius: 0px;
     text-align: center;
+    // background-color: green;
 }
 .contact-submit-button{
     width: 150px;

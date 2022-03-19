@@ -20,7 +20,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--backgroundcol);
+    background-color: white;
 }
 .about-page-title{
     margin-top: 2vh;
@@ -49,17 +49,18 @@
 }
 .about-founder-1{
     height: 30vh;
-    width: 25vw;
+    width: 22vw;
+    margin-left: 3vw;
 }
 .about-founder-img1{
     height: 30vh;
-    width: 25vw;
-    object-fit: cover;
+    width: 22vw;
+    object-fit: contain;
 }
 .about-founder-text1{
     height: 30vh;
     width: 25vw;
-    color: var(--textcol);
+    color: var(--darktext);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +74,7 @@
 .about-founder-text2{
     height: 30vh;
     width: 25vw;
-    color: var(--textcol);
+    color: var(--darktext);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,12 +82,14 @@
 }
 .about-founder-2{
     height: 30vh;
-    width: 25vw;
+    width: 20vw;
+    margin-right: 3vw;
 }
 .about-founder-img2{
     height: 30vh;
-    width: 25vw;
-    object-fit: cover;
+    width: 20vw;
+    object-fit: contain;
+    background-color: transparent;
 }
 .about-founder-container3{
     height: 30vh;
@@ -95,17 +98,18 @@
 }
 .about-founder-3{
     height: 30vh;
-    width: 25vw;
+    width: 20vw;
+    margin-left: 3vw;
 }
 .about-founder-img3{
     height: 30vh;
-    width: 25vw;
-    object-fit: cover;
+    width: 22vw;
+    object-fit: contain;
 }
 .about-founder-text3{
     height: 30vh;
-    width: 25vw;
-    color: var(--textcol);
+    width: 22vw;
+    color: var(--darktext);
     display: flex;
     flex-direction: column;
     justify-content: center;

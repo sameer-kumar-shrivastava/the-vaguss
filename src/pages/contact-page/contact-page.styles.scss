@@ -1,9 +1,100 @@
 .contact-container{
     height: 100vh;
-    background-color: cyan;
+    background-color: var(--backgroundlight);
     text-align: center;
-    line-height: 100vh;
     vertical-align: middle;
     font-size: 30px;
     font-weight: bold;
+}
+.contact-card-container{
+    height: 80vh;
+    width: 80vw;
+    border-radius: 25px;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundcol);
+    align-items: center;
+    vertical-align: middle;
+}
+.contact-title{
+    height: 10vh;
+    color: var(--textcol);
+}
+
+.contact-box-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--backgroundlight);
+}
+.contact-box-left-container{
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-name-label{
+    font-weight: 300;
+}
+.contact-name-input{
+    background-color: transparent;
+    width: 25vw;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+}
+.contact-mail-label{
+    font-weight: 300;
+}
+.contact-mail-input{
+    background-color: transparent;
+    width: 25vw;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+}
+.contact-phone-label{
+    font-weight: 300;
+}
+.contact-phone-input{
+    background-color: transparent;
+    width: 25vw;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+}
+.contact-checkbox-label{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.contact-checkbox-input{
+    margin: 10px;
+}
+.contact-box-right-container{
+    height: 60vh;
+    width: 50%;
+}
+.contact-right-problem{
+    min-height: 30vh;
+    width: 25vw;
+    border-radius: 0px;
+}
+.contact-problem-input{
+    min-height: 30vh;
+    width: 25vw;
+    margin: 15vh;
+    border-radius: 0px;
+    text-align: center;
+}
+.contact-submit-button{
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
 }

@@ -1,12 +1,28 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './navbar.styles.scss';
 import { NavLink } from 'react-router-dom';
 import { Link } from "react-scroll";
+import { UserContext } from '../../userauth';
+
 
 const Navbar = () => {
+    const [loggedIn,setloggedIn] = useContext(UserContext);
+
+    const handleclick = (event) =>{
+        event.preventDefault();
+        setloggedIn('LoggedOut')
+        alert("Logged Out Sucessfully");
+
+    }
+
+    const handleclick1 = (event) =>{
+        event.preventDefault();
+        setloggedIn('LoggedIN')
+        alert("Logged In Sucessfully");
+    }
     return(
             <div className='navbar-container'>
-                <h1><NavLink className='navbar-logo' to="/">Company</NavLink></h1>
+                <h1><NavLink className='navbar-logo' to="/">{loggedIn}</NavLink></h1>
                     <nav>                        
                         <ul>
                             <li>
@@ -22,6 +38,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
+                                
                                 <Link
                                     activeClass="active"
                                     to="blog"
@@ -75,6 +92,9 @@ const Navbar = () => {
                                     </NavLink></button></li>
                                                
                                 <li className='hamburger-menu-icon'>☰</li>
+
+                                <li><button onClick={handleclick}>Log out</button></li>
+                                <li><button onClick={handleclick1}>Login</button></li>
                         </ul>
                     </nav>
             </div>

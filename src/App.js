@@ -8,6 +8,7 @@ import Navbar from './components/navbar-component/navbar.component';
 import Footer from './components/footer-component/footer.component';
 import SigninPage from './pages/signin-page/signin-page';
 import SignupPage from './pages/signup-page/signup-page';
+import {UserProvider} from './userauth';
 
  
 
@@ -15,20 +16,21 @@ class App extends Component {
 
 
 
-  render(props){
+  render(){
    
   return (
       <div className="App">
-        <h1>props.loggedIn</h1>
-        <Router>
-          <Navbar/>
-            <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/signin" element={<SigninPage/>} />
-                <Route path="/signup" element={<SignupPage/>} />
-            </Routes>
-          <Footer />
-        </Router>     
+        <UserProvider>
+          <Router>
+            <Navbar/>
+              <Routes>
+                  <Route path="/" element={<Dashboard />} />
+                  <Route path="/signin" element={<SigninPage/>} />
+                  <Route path="/signup" element={<SignupPage/>} />
+              </Routes>
+            <Footer />
+          </Router>
+        </UserProvider>     
       
       </div>
     );

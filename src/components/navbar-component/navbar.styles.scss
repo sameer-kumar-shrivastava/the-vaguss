@@ -11,7 +11,7 @@
     align-items: center;
     position: fixed;
 	top: 0px;
-    overflow: hidden;
+    // overflow: hidden;
     z-index: 999;    
     background: var(--backgroundcol);
 }
@@ -46,4 +46,39 @@ a{
     text-decoration: none;
     color: var(--textcol);
 }
+.hamburger-menu-icon{
+    display: none;
+}
+.menu-list{
+    transition: all 1s linear;
+}
 
+
+@media (max-width:768px) {
+    .hamburger-menu-icon{
+        display: block;
+        margin-right: 2vw;
+        
+        cursor:pointer;
+    }
+    nav ul{
+        width: 50%;
+        background-color:#000222;
+        position: absolute;
+        top:10vh;
+        right: 0px;
+        z-index: 6;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 20px 10px 0px;
+    }
+    .navbar-logo{
+        
+    //   margin-left: 25vw;
+    }
+    .menu-list-closed{
+        display: none;
+    }
+    
+}

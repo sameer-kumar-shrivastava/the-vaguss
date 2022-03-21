@@ -21,7 +21,7 @@ const ImageSlider = () => {
             src='https://images.unsplash.com/photo-1647119126202-d13a4263d40c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' 
             alt="Cover Image 1"/>        */}
           <div className="home-page-text">
-            <h1 className="home-text-title">{loggedIn==='LoggedIN'?'Dhanyawad, Toh chaliye shuru krte hai :)':'Abe Phle Login toh Kar...!!!!'}</h1>
+            <h1 className="home-text-title">{loggedIn === true?'Dhanyawad, Toh chaliye shuru krte hai :)':'Abe Phle Login toh Kar...!!!!'}</h1>
             {/* <h1 className="home-text-subtitle-1">Has Became Easy</h1>
             <h3 className="home-text-subtitle-2">with COMPANY</h3> */}
             <button className="home-start-button">Start Now</button>

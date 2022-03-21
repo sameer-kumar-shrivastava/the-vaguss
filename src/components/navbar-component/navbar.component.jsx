@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React,{useContext, useState} from 'react';
 import './navbar.styles.scss';
 import { NavLink } from 'react-router-dom';
 import { Link } from "react-scroll";
@@ -7,24 +7,34 @@ import { UserContext } from '../../userauth';
 
 const Navbar = () => {
     const [loggedIn,setloggedIn] = useContext(UserContext);
+    const [MenuList, setMenulist] = useState(false);
 
-    const handleclick = (event) =>{
+    const handleLogout = (event) =>{
         event.preventDefault();
-        setloggedIn('LoggedOut')
-        alert("Logged Out Sucessfully");
+        if(loggedIn===true){
+        setloggedIn(false)
+        alert("Logged Out Sucessfully");}
+        else{
+            alert("Please SignIn to Logout")
+        }
 
     }
 
-    const handleclick1 = (event) =>{
-        event.preventDefault();
-        setloggedIn('LoggedIN')
-        alert("Logged In Sucessfully");
+    // const handleclick1 = (event) =>{
+    //     event.preventDefault();
+    //     setloggedIn(true)
+    //     alert("Logged In Sucessfully");
+    // }
+    const toggleMenu = (event) => {
+        setMenulist(!MenuList);
     }
+
+    
     return(
             <div className='navbar-container'>
-                <h1><NavLink className='navbar-logo' to="/">{loggedIn}</NavLink></h1>
+                <h1><NavLink className='navbar-logo' to="/"> Company </NavLink></h1>
                     <nav>                        
-                        <ul>
+                        <ul id='menu-list' className= {MenuList===true?'menu-list':'menu-list-closed'}>
                             <li>
                                 <Link
                                     activeClass="active"
@@ -46,6 +56,7 @@ const Navbar = () => {
                                     smooth={true}
                                     offset={-70}
                                     duration={500}
+                                    
                                 >
                                     Blog
                                 </Link>
@@ -87,17 +98,19 @@ const Navbar = () => {
                                 </Link>
                             </li>
                     
-                    <li> <button><NavLink className='navbar-login-button-text' to="/signin">
-                                    Login | Signup                                
-                                    </NavLink></button></li>
+                    <li> {loggedIn===false?
+                    <button><NavLink className='navbar-login-button-text' to="/signin">
+                    Login | Signup                                
+                                    </NavLink></button>:<button onClick={handleLogout} className='navbar-login-button-text'>Signout</button>}</li>
                                                
-                                <li className='hamburger-menu-icon'>☰</li>
+                                
 
-                                <li><button onClick={handleclick}>Log out</button></li>
-                                <li><button onClick={handleclick1}>Login</button></li>
-                        </ul>
+                             </ul>
                     </nav>
+                <h1 className='hamburger-menu-icon' onClick={toggleMenu}>☰</h1>
             </div>
+           
     );
+
 }
 export default Navbar;

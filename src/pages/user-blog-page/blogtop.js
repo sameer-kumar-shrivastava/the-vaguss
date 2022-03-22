@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import './blogtop.scss';
+import BlogTopNavbar from './user-blog-navbar'
 
 class blogtop extends Component {
     render() {
         return (
             <div className='blog-top'>
-                <div className='heading'>
-                    <h1>{this.props.heading}</h1>
-                    <p>{this.props.text}</p>
-                </div>
+                <BlogTopNavbar />
             </div>
         )
     }

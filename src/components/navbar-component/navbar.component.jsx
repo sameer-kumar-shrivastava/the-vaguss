@@ -8,6 +8,7 @@ import { UserContext } from '../../userauth';
 const Navbar = () => {
     const [loggedIn,setloggedIn] = useContext(UserContext);
     const [MenuList, setMenulist] = useState(false);
+    
 
     const handleLogout = (event) =>{
         event.preventDefault();
@@ -19,6 +20,7 @@ const Navbar = () => {
         }
 
     }
+    
 
     // const handleclick1 = (event) =>{
     //     event.preventDefault();
@@ -60,6 +62,9 @@ const Navbar = () => {
                                 >
                                     Blog
                                 </Link>
+                            </li>
+                            <li>
+                                <NavLink className='' to="/Share">loginblog</NavLink>
                             </li>
                             <li>
                                 <Link

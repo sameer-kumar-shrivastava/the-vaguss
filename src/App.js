@@ -8,6 +8,7 @@ import Navbar from './components/navbar-component/navbar.component';
 import Footer from './components/footer-component/footer.component';
 import SigninPage from './pages/signin-page/signin-page';
 import SignupPage from './pages/signup-page/signup-page';
+import Share from './pages/user-blog-page/Share.js';
 import {UserProvider} from './userauth';
 
  
@@ -27,6 +28,7 @@ class App extends Component {
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/signin" element={<SigninPage/>} />
                   <Route path="/signup" element={<SignupPage/>} />
+                  <Route path='/Share' element={<Share />} /> 
               </Routes>
             <Footer />
           </Router>
